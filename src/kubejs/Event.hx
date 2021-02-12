@@ -1,5 +1,5 @@
 package kubejs;
 
 extern class Event {
-	function cancel():Void;
+    function cancel():Void;
 }
