@@ -1,8 +1,6 @@
-package kubejs.events;
+package kubejs.events.server;
 
-import kubejs.Recipe.RecipeFilter;
-import kubejs.Event;
-import kubejs.Recipe;
+import kubejs.events.Event;
 import kubejs.Item.DynItem;
 
 extern class RecipesEvent extends Event {
@@ -17,4 +15,18 @@ extern class RecipesEvent extends Event {
     function custom(data:Dynamic):Recipe;
     function replaceInput(filter:RecipeFilter, fromItem:DynItem, toItem:DynItem):Void;
     function replaceOutput(filter:RecipeFilter, fromItem:DynItem, toItem:DynItem):Void;
+}
+
+typedef RecipeFilter = {
+    ?id:String,
+    ?input:String,
+    ?output:String,
+    ?mod:String,
+    ?type:String
+};
+
+extern class Recipe {
+    function merge(data:Dynamic):Recipe;
+    function id(id:String):Recipe;
+    function group(g:String):Recipe;
 }

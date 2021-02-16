@@ -1,7 +1,8 @@
 package kubejs;
 
-import kubejs.Event;
-import kubejs.events.GeneralEvents.RecipesEvent;
+import kubejs.events.Event;
+import kubejs.events.server.RecipesEvent;
+import kubejs.events.server.TagsEvent;
 
 class Events {
     public static inline function onEvent<T:Event>(event:EventType<T>, handler:T->Void) {
@@ -11,6 +12,7 @@ class Events {
 
 @:enum abstract EventType<T:Event>(String) to String from String {
     var RecipesEventType:EventType<RecipesEvent> = "recipes";
+    var TagsEventType:EventType<TagsEvent> = "item.tags";
 }
 
 @:native("onEvent") private extern class OnEvent {

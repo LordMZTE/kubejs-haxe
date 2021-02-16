@@ -4,9 +4,9 @@
     "contributors": ["LordMZTE"],
     "url": "https://github.com/lordmzte/kubejs-haxe",
     "tags": ["kubejs", "bindings", "minecraft", "script"],
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Haxe bindings for KubeJS in order to write scripts in Haxe",
     "classPath": "src",
-    "releasenote": "Fix Item being called incorrectly"
+    "releasenote": "Refactor and tag support"
 }
 
