@@ -4,9 +4,9 @@
     "contributors": ["LordMZTE"],
     "url": "https://github.com/lordmzte/kubejs-haxe",
     "tags": ["kubejs", "bindings", "minecraft", "script"],
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Haxe bindings for KubeJS in order to write scripts in Haxe",
     "classPath": "src",
-    "releasenote": "Add Event Types for all Tag events"
+    "releasenote": "Add support for Ingredient and ItemStack classes"
 }
 
